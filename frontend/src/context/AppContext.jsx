@@ -9,7 +9,7 @@ export const AppContext = createContext()
 const AppContextProvider = (props) => {
 
     const currencySymbol = "$"
-    const backend_Url = import.meta.env.VITE_BACKEND_URL
+    const backend_Url = "https://medi-care-backend1.onrender.com"
 
     //if you login and refresh the page then to stay still on login page this logic is for.
     const [token, setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token') : false)
